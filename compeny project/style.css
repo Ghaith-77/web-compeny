@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    background-color: rgb(234 181 104) !important;
+    width: 10px;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(153 153 153) !important;
+    border-radius: 20px;
+
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    transition: all ease-in-out .3s;
+    
+}
+
+.img_inm:hover {
+    transform: scale(1.2);
+}
+
+ul li {
+    list-style: none;
+    width: 100%;
+    position: relative;
+
+}
+
+ul li a {
+    transition: .2s all ease-in-out;
+    text-decoration: none;
+    color: rgb(153 153 153);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+ul li a:hover {
+    color: rgb(234 181 104);
+}
+
+/* _________موشر */
+.triangle {
+    color: rgb(234 181 104) !important;
+}
+
+.triangle::after {
+    content: "";
+    width: 0;
+    height: 0;
+    top: 10px;
+    left: -19px;
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid rgb(153 153 153);
+}
+
+/* _____ */
+
+.active {
+    width: 172px !important;
+    visibility: visible !important
+}

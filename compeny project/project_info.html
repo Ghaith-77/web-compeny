@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MY Compeny</title>
+
+
+    <!-- ____bootstrap__ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- ____bootstrap end__ -->
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+</head>
+<style>
+    .card-body {
+        transition: .5s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        text-align: start;
+    }
+
+    .card:hover .card-body {
+        margin-left: 40px;
+    }
+
+    .border-black {
+        border-color: #c4c4c4 !important;
+    }
+
+    @media(max-width:765px) {
+        .title-container , .time{
+            text-align: center !important;
+            margin: 0 !important;
+        }
+
+        .Our_SocialMedia,
+        .contact_us,
+        .info {
+            margin-top: 30px;
+        }
+
+        .content {
+            align-items: center !important;
+        }
+
+        .title-container {
+            margin-left: 0 !important;
+            padding: 0 !important;
+        }
+
+        .title-container h1 {
+            font-size: 40px !important;
+        }
+
+    }
+</style>
+
+<body style="background-color: #efefef;" class="animate__fadeIn animate__delay-2s">
+    <!-- nav_ -->
+
+    <div class=" my_navbar container col-10 pt-5 pb-5 border-black border-bottom border-2"
+        style="display: flex; align-items: center; justify-content: space-between;">
+        <div class="logo d-flex justify-content-start col-md-4 ">
+            <h1 class="me-3 ">LASK</h1>
+            <h3 class="mt-4">Architecture</h3>
+        </div>
+        <div class="hamperger  col-md-4">
+            <div class="fathimg" style="float: right;cursor: pointer; position: relative;">
+                <img class="img" src="./images/hamperger.PNG" alt="" onclick="menuClicked()">
+                <div id="menu" class="menu  border shadow-sm"
+                    style="transition: all .4s ease-in ; visibility: hidden; overflow: hidden; z-index:1000 ; background-color: #fff; width: 0;bottom: -200px;left: -139px;height: max-content; position: absolute;">
+                    <ul style="margin: 20px 20px 20px 5px;">
+                        <li class="mt-1 ">
+                            <a onclick="menuClicked_triangle(this); " href="main.html" class="triangle liManu">Home</a>
+                        </li>
+                        <li class="mt-1">
+                            <a onclick="menuClicked_triangle(this); getsection(this);" href="#"
+                                class="liManu">Interior</a>
+                        </li>
+                        <li class="mt-1">
+                            <a onclick="menuClicked_triangle(this); getsection(this);" href="#"
+                                class="liManu">Exterior</a>
+                        </li>
+                        <li class="mt-1">
+                            <a onclick="menuClicked_triangle(this); getsection(this);" href="#"
+                                class="liManu">Landscape</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nav_ end-->
+    <!-- ____________ -->
+    <div class="container mt-5 p-5 d-flex content"
+        style="flex-direction: column; background-color: #fff; height: max-content;">
+
+        <div class="header_section my-5">
+            <div class="title-container border-3 border-bottom"
+                style="color: #99999b; margin-left: 60px; width: max-content; padding-right: 40px; border-color: rgb(234 181 104)!important ;">
+                <h1 style="font-weight: 400; font-size: 50px;">
+                    INTERIOR
+                </h1>
+            </div>
+            <div class="time mt-2" style="color: rgb(234 181 104); margin-left: 60px; width: max-content;">
+                <h2 style="font-weight: 700;" id="dataforproject">
+                    Damascus House 2018
+                </h2>
+            </div>
+        </div>
+        <div class="container p-3 d-flex align-items-center justify-content-center" style="flex-direction: column; background-color: #efefef;">
+            <div class="cards d-flex align-items-center justify-content-center col-12 mt-5" style="flex-direction: column;">
+                <div class="card mb-3 col-md-8 col-12">
+                    <div class="row g-0">
+                        <div class="col-md-6" style="overflow: hidden;">
+                            <img src="./images/inrerior.PNG" style="height: 170px;" class="img-fluid rounded-start img img_inm"
+                                alt="...">
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center justify-content-center">
+                            <div class="card-body " style=" color: rgb(234 181 104);">
+                                <h1 class="card-title">Before</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 col-md-8 col-12">
+                    <div class="row g-0">
+                        <div class="col-md-6" style="overflow: hidden;">
+                            <img src="./images/inrerior.PNG" style="height: 170px;" class="img-fluid rounded-start img img_inm"
+                                alt="...">
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center justify-content-center">
+                            <div class="card-body " style=" color: rgb(234 181 104);">
+                                <h1 class="card-title">Final</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 col-md-8 col-12">
+                    <div class="row g-0">
+                        <div class="col-md-6" style="overflow: hidden;">
+                            <img src="./images/inrerior.PNG" style="height: 170px;" class="img-fluid rounded-start img img_inm"
+                                alt="...">
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center justify-content-center">
+                            <div class="card-body " style=" color: rgb(234 181 104);">
+                                <h1 class="card-title">The Design</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project_info mt-5 col-5">
+                <p>
+                    nside the home, a mix of pigmented blues, greens, and yellows
+                    echoes the natural surroundings, as do earthy materials including
+                    wood, clay, stone, and plaster.
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- ____________  -->
+    <footer
+        style="padding: 10px; color: #fff; display: flex; align-items: start; justify-content: center; flex-wrap: wrap; width: 100%; background-color: rgb(234 181 104); height: max-content; margin-top: 30px;">
+        <div class="Our_SocialMedia col-sm-6 col-12"
+            style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+            <div class="title border-2 border-bottom" style="border-color: #99999b;">
+                <h1>Our SocialMedia</h1>
+            </div>
+            <div class="SocilaMeia col-8 mt-3 d-flex align-items-center justify-content-evenly ">
+                <div class="fathimg" style="width: 45px;">
+                    <img src="./images/icons8-youtube-logo-64.png" alt="" class="img">
+                </div>
+                <div class="fathimg" style="width: 60px;">
+                    <img src="./images/pngwing.com.png" alt="" class="img">
+                </div>
+                <div class="fathimg" style="width: 40px;">
+                    <img src="./images/pngfind.com-logo-de-facebook-png-2276513.png" alt="" class="img">
+                </div>
+            </div>
+        </div>
+        <div class="contact_us col-sm-6  col-12"
+            style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+            <div class="title border-2 border-bottom" style="border-color: #99999b;">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="num mt-3">
+                <p style="font-size: 20px; margin: 5px !important;">0958884004</p>
+                <p style="font-size: 20px; margin: 5px !important">0958884004</p>
+            </div>
+        </div>
+        <div class="info  col-12" style="text-align: center;">
+            <p>All Rights Reserved 2023 ©</p>
+        </div>
+
+    </footer>
+
+</body>
+<script src="./js/data.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/sections.js"></script>
+<script src="./js/project.js"></script>
+
+
+</html>

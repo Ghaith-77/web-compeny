@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MY Compeny</title>
+
+
+    <!-- ____bootstrap__ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- ____bootstrap end__ -->
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+</head>
+<style>
+    .border-black {
+        border-color: #c4c4c4 !important;
+    }
+
+    @media(max-width:765px) {
+
+        .Our_SocialMedia,
+        .contact_us,
+        .info {
+            margin-top: 30px;
+        }
+    }
+</style>
+
+<body style="background-color: #efefef;" class="animate__fadeIn animate__delay-2s">
+    <!-- nav_ -->
+
+    <div class=" my_navbar container col-10 pt-5 pb-5 border-black border-bottom border-2"
+        style="display: flex; align-items: center; justify-content: space-between;">
+        <div class="logo d-flex justify-content-start col-md-4 ">
+            <h1 class="me-3 ">LASK</h1>
+            <h3 class="mt-4">Architecture</h3>
+        </div>
+        <div class="hamperger  col-md-4">
+            <div class="fathimg" style="float: right;cursor: pointer; position: relative;">
+                <img class="img" src="./images/hamperger.PNG" alt="" onclick="menuClicked()">
+                <div id="menu" class="menu  border shadow-sm"
+                    style="transition: all .4s ease-in ; visibility: hidden; overflow: hidden; z-index:1000 ; background-color: #fff; width: 0;bottom: -200px;left: -139px;height: max-content; position: absolute;">
+                    <ul style="margin: 20px 20px 20px 5px; ;">
+                        <li class="mt-1 ">
+                            <a onclick="menuClicked_triangle(this); " href="main.html" class="triangle liManu">Home</a>
+                        </li>
+                        <li class="mt-1">
+                            <a onclick="menuClicked_triangle(this); getsection(this);" href="#" class="liManu">Interior</a>
+                        </li>
+                        <li class="mt-1">
+                            <a onclick="menuClicked_triangle(this); getsection(this);" href="#" class="liManu">Exterior</a>
+                        </li>
+                        <li class="mt-1">
+                            <a onclick="menuClicked_triangle(this); getsection(this);" href="#" class="liManu">Landscape</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nav_ end-->
+    <!-- kinds________ -->
+    <div id="sections_container" class="container my-5">
+        <!-- <div class="INTERIOR row d-flex  justify-content-center my-3  gap-3 ">
+            <div class="fath-img col-md-5 col-sm-12 p-0 overflow-hidden border shadow-sm">
+                <img class="img_inm" src="./images/inrerior.PNG" alt="" width="100%" height="100%">
+            </div>
+            <div class="info border shadow-sm col-md-5 col-sm-12 p-4 d-flex align-items-start flex-column justify-content-center"
+                style="background-color: #fff;">
+                <div class="title border-2 border-bottom w-75 mx-auto"
+                    style="border-color: rgb(234 181 104) !important;">
+                    <h1 style="color: #99999b; font-weight: 400 !important;">INTERIOR</h1>
+                </div>
+                <p style="font-size:15px;" class="w-75 mx-auto">
+                    We are committed to delivering
+                    inspired designs that fulfill client
+                    expectations through collaboration and
+                    exceptional service
+                </p>
+            </div>
+        </div> -->
+    </div>
+    <!-- ____________ -->
+    <div class="ourstory shadow-sm border container p-3 col-8 d-flex align-items-center justify-content-center "
+        style="flex-direction: column; background-color: #fff; height: max-content;">
+        <div class="col-12 d-flex align-items-center justify-content-center"
+            style="flex-direction: column; overflow: auto;">
+            <div class=" title_ourstory col-5 p-2  border-bottom border-3"
+                style="text-align: center; color: #99999b;  border-color: rgb(234 181 104) !important;">
+                <h1 style="font-weight: 300 !important;">Our Story</h1>
+            </div>
+            <div class="content_ourstory mt-3 col-5" style="height: 150px; text-align: center;">
+                <p style="font-size: 15px;">
+                    We believe that the way we work can add meaning and value
+                    to the world. That ideas inspire positive change.
+                    That coloring outside the lines can illuminate fresh
+                    perspectives. And that small details yield important
+                    services. While we are most well-known for We believe that the way we work can add meaning and value
+                    to the world. That ideas inspire positive change. That coloring outside the lines can illuminate
+                    fresh perspectives. And that small details yield important realizations.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- ____________ -->
+    <footer
+        style="padding: 10px; color: #fff; display: flex; align-items: start; justify-content: center; flex-wrap: wrap; width: 100%; background-color: rgb(234 181 104); height: max-content; margin-top: 30px;">
+        <div class="Our_SocialMedia col-sm-6 col-12"
+            style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+            <div class="title border-2 border-bottom" style="border-color: #99999b;">
+                <h1>Our SocialMedia</h1>
+            </div>
+            <div class="SocilaMedia col-8 mt-3 d-flex align-items-center justify-content-evenly ">
+                <div class="fathimg" style="width: 45px;">
+                    <img src="./images/icons8-youtube-logo-64.png" alt="" class="img">
+                </div>
+                <div class="fathimg" style="width: 60px;">
+                    <img src="./images/pngwing.com.png" alt="" class="img">
+                </div>
+                <div class="fathimg" style="width: 40px;">
+                    <img src="./images/pngfind.com-logo-de-facebook-png-2276513.png" alt="" class="img">
+                </div>
+            </div>
+        </div>
+        <div class="contact_us col-sm-6  col-12"
+            style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+            <div class="title border-2 border-bottom" style="border-color: #99999b;">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="num mt-3">
+                <p style="font-size: 20px; margin: 5px !important;">0958884004</p>
+                <p style="font-size: 20px; margin: 5px !important">0958884004</p>
+            </div>
+        </div>
+        <div class="info  col-12" style="text-align: center;">
+            <p>All Rights Reserved 2023 ©</p>
+        </div>
+
+    </footer>
+
+</body>
+<script src="./js/data.js"></script>
+<script src="./js/main.js"></script>
+
+</html>
